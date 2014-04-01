@@ -1,0 +1,22 @@
+html { 
+    height: 100% 
+}
+body { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0 
+}
+#wrapper { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0 
+}
+#map-canvas { 
+    height: 100%
+}
+aside { 
+    height: 100%; 
+    width: 25%; 
+    float: left; 
+    border-right: 5px double gray 
+}

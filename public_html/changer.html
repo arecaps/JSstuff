@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AModule</title>
+        <meta charset="UTF-8">
+        <style>
+            #theDiv {
+                margin-left: 40%;
+                font-family: fantasy;
+                color: red;
+            }
+            #buttons {
+                padding: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="theDiv">
+            <h1 id="header">This is some BIG stuff.</h1>
+            <p id="litteGuy">I am just a little guy.</p>
+            <h2>Things we like to do:</h2>
+            <ol id="theList">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>Java</li>
+            </ol>
+        </div>
+        <div id="buttons">
+            <label>Choose an element:</label>
+            <select id="theSelect">
+                <option value ="theDiv">All the text</option>
+                <option value ="header">The header</option>
+                <option value ="litteGuy">Little sentence</option>
+                <option value ="theList">The list</option>
+            </select>
+            <label>Choose a style:</label>
+            <input id="style" type="text" />
+            <label>Enter a value:</label>
+            <input id="val" type="text"/>
+            <button id="submit">Submit</button>
+        </div>
+        <script>
+            document.getElementById("submit").addEventListener("click", function () {
+
+var update = (function () {
+    var newInfo = {
+        things: document.getElementById("theSelect").value,
+        styles: document.getElementById("style").value,
+        vals: document.getElementById("val").value
+    };
+    return {
+        changeElement: function () {
+            return newInfo.things;
+        },
+        changeStyle: function () {
+            return newInfo.styles;
+            //alert(newInfo.styles);
+        },
+        changeValue: function () {
+            return newInfo.vals;
+        }
+    };
+}());
+
+    var things = update.changeElement(),
+        styles = update.changeStyle(),
+        vals = update.changeValue();
+    document.getElementById(things).style[styles] = vals;
+});
+        </script>
+    </body>
+</html>

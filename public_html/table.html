@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            table, td, th {
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <table id="theTable">
+                <thead>
+                    <tr>
+                        <th>Name</th><th>Address</th><th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Andy Boy</td><td>45 Owtami Way</td><td>765-987-8765</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="table.js"></script>
+        <script>
+            pcs.wrap("theTable");
+            pcs.row(["Chaim", "64 Grezr Rd", "432-233-1652"]);
+        </script>
+    </body>
+</html>

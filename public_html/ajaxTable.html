@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            table, td, th {
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <table id="theTable">
+                <thead>
+                    <tr>
+                        <th>First Name</th><th>Last Name</th><th>email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aryeh</td><td>Caplan</td><td>arecaplan@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="table.js"></script>
+        <script>
+            pcs.wrap("theTable");
+            $.getJSON("info.json", function (data) {
+                $.each(data, function (i, info) {
+                    pcs.row(info);
+                });
+            }
+            );
+        </script>
+    </body>
+</html>

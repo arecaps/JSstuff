@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What in the world</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div><h1>Where was I?</h1></div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+            var url = "http://where.yahooapis.com/v1/place/12761226format=json&jsoncallback=?&appid=jjf0PXvV34ELuTM7psP.ZnX1EYp9S2wGEvvlPpKt4ENkMDzL.IQ51fipPrH1FpYpPwUICG2jmQYf.xntVif4C9RW8xtHKGI-";
+            $.getJSON(url, function (data) {
+              console.log(data);
+            }
+            );
+        </script>
+    </body>
+</html>

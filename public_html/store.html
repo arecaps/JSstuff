@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Department Store</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            #name {
+                font-family: cursive;
+                font-size: 3.5em;
+                padding-left: 25px;
+            }
+            #theList :hover{
+                text-decoration: underline;
+                color: blue;
+            }
+            #theList {
+                font-size: 1.6em;
+                display: inline-block;
+            }
+            #tableDiv {
+                display: none;
+            }
+            table, td, th {
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+            .pic {
+                max-height: 250px;
+                max-width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="name">Gut und Schnieder</h1>
+        <div id="bigDiv">
+            <ul id="theList">
+                <li id ="elec">Electronics</li>
+                <li id ="dog">Dogs</li>
+                <li id ="car">Cars</li>
+                <li id ="hse">Houses</li>
+            </ul>
+        </div>
+        <div id="tableDiv">
+            <table id="theTable">
+                <thead>
+                    <tr id="header"></tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="table.js"></script>
+        <script src="store.js"></script>
+    </body>
+</html>

@@ -11,6 +11,17 @@
 
             <aside id="side">
                 <h1>Cool Places!</h1>
+                <div id="input">
+                    <input id ="choice" type="text" placeholder ="Enter a type of place to search."/>
+                    <button id="submit">Search</button>
+                    <select id="amount">
+                      <option value="10" selected>10</option>
+                      <option value="20">20</option>
+                      <option value="30">30</option>
+                    </select>
+                    <button id="bounds">Show points of interest on current map</button>
+                    <ul></ul>
+                </div>
             </aside>
             <div id="map-canvas"></div>
         </div>
@@ -19,4 +30,3 @@
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
         <script src="map.js"></script>
     </body>
-</html>

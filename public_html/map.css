@@ -16,7 +16,30 @@ body {
 }
 aside { 
     height: 100%; 
-    width: 25%; 
+    width: 23%; 
     float: left; 
-    border-right: 5px double gray 
+    border-right: 5px double gray;
+    padding-left: 25px;
+    overflow: scroll;
+}
+input {
+    height: 2em;
+    width: 200px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+}
+h1 {
+    margin-bottom: 12px;
+}
+button {
+
+    height: 2.3em;
+    border-radius: 15px;
+}
+.picts {
+    display: none;
+}
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
